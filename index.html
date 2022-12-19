@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAe1BMVEX///+AgoI6u5B4enp7fX3i4uJ2eHjw8PC/wMDT09M1uo7P0NCPkZFIwJi7vLyam5vFxsaIioqjpKTo6elmyabY2dkouIrE6du0tbX39/fX8ehaxaGqq6uSlJTb3Ny45NTr+PPK698VtYW55NXS7uSv4c6H07hPwpt5zrDdfkilAAAFBklEQVR4nO2d63KjOBBGLUvGODBg8Maxx+DJbmYm8/5PuO6Q1K4uvUXVBnVP8p2fLpUEp8xFrVazWgEA3pFDderHemG6N+p2qLbSp+xzLmtrnTP5cM7asZI+73+xNzlP/x9svZE+9Td6K2LgxcJe+uQnWpk/wUShQkIj9y94kXAvLeD2PChEFdw4SytY9ZJXAuFO0gq2slcCYaX/CHt5B076tih+KdwYhR100gJuWFkF58TfwC1LwsFB1MEhPCRr2qFpmnIpmqE14S3I7mQd+MfjTLX8Tfq863zzVnbutPEddJkeU6MnQfjB4DvIdmH6tyGn6H/g+mzjDk6pg4zX5dVqdZDvGbV1Mu5T+A5e74gPl/X6yzJcvr0OrPW54KbfHo9366W4++vrNIhyB38eF1OwXh9/TIMod/AAB3CwWvpaeL0pfmoHT9MgngPZOVPKwXc4WNjBwzQIHMABodzB18/swEy/wQEcEHDwyR3guSDoQDYFAQ60zBf0Ocg/d9bnYNkYChyk40j6HDzBwcL3xN/jWlh9Od6t7xbi+DiNodXB2zrT48/L8/OF+OPdeOnu+fLrdYlFrYMiXza9t/iuyUHGY7kKjZvCvx/kyxg9af0fGJcrY9TPQ9HloM00bKvXgXFjjo0lmzHIS1PlgLbXDOW+WpByqKMxlTnw01Tte/Gfiar6HOQHDuCAgAM4IOAADgg4gAMCDuCAgAM4IDStvUsBB3BAwIE+B0WXKGsU7c41zqbKH9koRjSrO2UO6vRSUxk0c0O6u6iSQHqnXOV3p8sBW5Ji8E+u5vrzSwlYLkpd+rF1VQ7YagxXfx2i5Np560em45ptvUI0qhzwaywb76D5TdoNHMDBCg4IOIADAg7ggIADOCDgAA4IOIADAg7ggIADOCDg4CM44A/ajwTzCe5BYJkdVrED9miC0rOO2e0RluVsmO5axXFlY5vNISYs/nmjSjQ77KPqrEOqu2tQ5V6ZA+OKBIkFOZtqF6ciz+pOmwMJ4AAOCDiAAwIO4ICAA4UO5n0uYHa7Oc2UOXCuT1BH3+6xXapd/Lkv2yaajUF3uhxwk+ddOK1gElFOYXpTOrdno3m+4Lh2fo6NYeMMtX9yXPFyfyquywF7bkE+EhtDQT7SR4gjwQEcwAEcwAEcwAEcwAEBB3BAwAEcEHAABwQcwAExN5b2iRywB+1nmHDbXMN8JLYm5VVxTJWLmZ+ND7eB9RqEqTlXQfhZlQNj+13MfWlC7CnRbhcuL9xuMNV93N0+/LaxLgcmWTIx9THwme3mNNPmQAI4gAMCDuCAgAM4IOBAoYNUAlHqHel/5CMpf0dydZOgj0zZNtWujd46u1OiWVBkR5kDbpJzCI66YI56Py+9KZiC6XLAbr7xCxq5nmvX+ifHfdxkp3jujBgKYmlwAAdwAAdwAAdwsIIDAg7ggIADOCDgAA4IOIADAg4QSyOWjamy+UiaY6pc8ae5sfXqI8TWbd2UMUO057toE83KeI3FpLoL05aUOcBamxBwIP6droMKBzk+rM2zTdb5yEzBLUtmQvr8CSurIHipkYF9ncxEI38x8FU5M6HgwWCvwg6CNHoJpC+F2/Qleg/OjK2kFYT1XbPj2O+eZeQcV7fKivDLwcRWUIJjvuyXnz5RETeLgaLloiz52bQutRFnWQHWtuJPRY9tNYzpyb5Lbl2aC9Ol68ahUnEnCDlvc6HnEgDgQ/E3/gy/1759rmUAAAAASUVORK5CYII=">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main-body">
+        <div class="calculator">
+            <div class="input-display">
+                <input type="text" id="display-screen" placeholder="text">
+            </div>
+            <div class="input-screen">
+                <div class="row">
+                    <button class="button" onclick="buttonClick(7)">7</button>
+                    <button class="button" onclick="buttonClick(8)">8</button>
+                    <button class="button" onclick="buttonClick(9)">9</button>
+                    <button class="button" onclick="buttonClick('/')">/</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="buttonClick(4)">4</button>
+                    <button class="button" onclick="buttonClick(5)">5</button>
+                    <button class="button" onclick="buttonClick(6)">6</button>
+                    <button class="button" onclick="buttonClick('*')">x</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="buttonClick(1)">1</button>
+                    <button class="button" onclick="buttonClick(2)">2</button>
+                    <button class="button" onclick="buttonClick(3)">3</button>
+                    <button class="button" onclick="buttonClick('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="buttonClick('.')">.</button>
+                    <button class="button" onclick="buttonClick(0)">0</button>
+                    <button class="button" onclick="equalClick()">=</button>
+                    <button class="button" onclick="buttonClick('+')">+</button>
+                </div>
+                <button class="buttonClear" onclick="clearButton()">Clear</button>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
